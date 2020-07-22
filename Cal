@@ -1,0 +1,34 @@
+using System;
+
+namespace CalculatorApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+         
+            Console.BackgroundColor = ConsoleColor.White; //Achtergrondkleurd
+            Console.ForegroundColor = ConsoleColor.DarkGreen; // Tekstkleur
+            Console.Clear(); //Zorgt voor lege tekst
+
+            int intGetal1, intGetal2, intSom;
+
+            //Vraagt om het eerste getal
+            Console.Write("Wat is je eerste getal?"); 
+            intGetal1 = Convert.ToInt16(Console.ReadLine());
+
+            //Vraagt om het tweede getal
+            Console.Write("Welk getal wil je hierbij optrekken?");
+            intGetal2 = Convert.ToInt16(Console.ReadLine());
+
+            //Berekent het eindgetal door getal1 en getal2 bij elkaar op te tellen
+            intSom = intGetal1 + intGetal2;
+
+            //Laat zien welke getallen zijn ingevuld en wat het resultaat is!
+            Console.WriteLine( intGetal1.ToString() +" plus " + intGetal2.ToString()+" is "+intSom.ToString()+"!");
+
+         
+        }  
+
+    }
+}
